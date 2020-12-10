@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #07F7C8;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="149.0" fitWidth="157.0" layoutX="38.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/1.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="20.0" layoutY="200.0" prefHeight="27.0" prefWidth="194.0" text="Ala-Too International University">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="22.0" layoutY="283.0" prefHeight="26.0" prefWidth="183.0" text="+996 (312) 63 14 25" />
+                <Label alignment="CENTER" layoutX="20.0" layoutY="243.0" prefHeight="30.0" prefWidth="186.0" text=" info@iaau.edu.kg" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="407.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="101.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/2.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="21.0" layoutY="124.0" prefHeight="17.0" prefWidth="58.0" text="Username" />
+                <Label layoutX="21.0" layoutY="162.0" prefHeight="17.0" prefWidth="58.0" text="Password" />
+                <TextField fx:id="usernameTextFIELD" layoutX="79.0" layoutY="120.0" prefHeight="25.0" prefWidth="194.0" promptText="USERNAME" />
+                <PasswordField fx:id="enterPasswordFIELD" layoutX="79.0" layoutY="158.0" prefHeight="25.0" prefWidth="193.0" promptText="PASSWORD" />
+                <Button fx:id="loginButton" alignment="CENTER" layoutX="80.0" layoutY="265.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="193.0" style="-fx-background-color: #07F70B;" text="LOGIN" textFill="#f5f0f0">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelButton" alignment="CENTER" layoutX="80.0" layoutY="309.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="27.0" prefWidth="193.0" style="-fx-background-color: #f7072f;" text="CANCEL" textFill="#f8f1f1" />
+                <Label alignment="CENTER" layoutX="80.0" layoutY="237.0" prefHeight="17.0" prefWidth="192.0" text="TRY AGAIN" textFill="#dd0303">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
